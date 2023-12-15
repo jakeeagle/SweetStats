@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Data.css">
+    <title>Cookie Data Table</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>New Orders</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Data.html">Data</a></li>
+            <li><a href="Photos.html">Photos</a></li>
+            <li><a href="Supplies.html">Supplies</a></li>
+        </ul>
+    </nav>
+
+    <table class="datatable" border="1">
+        <thead>
+            <tr>
+                <th><button onclick="sortTableByFirstName()">Sort by First Name</button></th>
+                <th><button onclick="sortTableByLastName()">Sort by Last Name</button></th>
+                <th>Cookie Amount</th>
+                <th>Price</th>
+                <th><button onclick="sortTableByDate()">Sort by Date</button></th>
+                <th>Paid?</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><input type="text" id="firstname" placeholder="Enter First Name"></td>
+                <td><input type="text" id="lastname" placeholder="Enter Last Name"></td>
+                <td><input type="number" id="amount" placeholder="Enter Amount of Cookies"></td>
+                <td><input type="number" id="price" placeholder="Enter Total Price"></td>
+                <td><input type="date" id="date"></td>
+                <td><input type="checkbox" id="paid"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="addRow()">Add Order</button>
+    <button onclick="saveOrder()">Save</button>
+    <div id="totalRevenue">Total Revenue: $0.00</div>
+    <script src="Data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-image: url("../cookie-background.jpg");
+    padding-top: 20px;
+}
+
+header {
+    font-family: 'Lucida Handwriting';
+    text-shadow: 3px 3px 10px #f6378f;
+    font-size: 25px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+    line-height: 0%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+img {
+    display: block; /*Block-level element */
+    margin: auto; /* Centers the image horizontally */
+}
+
+/* Footer Text elements */
+.content-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-box {
+    margin-top: 10px;
+}
+
+.text-box p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lucida Handwriting';
+}
